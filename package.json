@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start:api": "lerna exec --scope @simple/api -- yarn start",
+    "start:mobile": "lerna exec --scope @simple/mobile -- yarn start ",
+    "mobile:ios": "lerna exec --scope @simple/mobile -- yarn run ios",
+    "mobile:android": "lerna exec --scope @simple/mobile -- yarn run android "
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {}
+}
